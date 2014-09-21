@@ -1,0 +1,7 @@
+---
+
+- name: gearman server restart
+  service: >
+    name=gearman-server
+    state=restarted
+  sudo: yes
