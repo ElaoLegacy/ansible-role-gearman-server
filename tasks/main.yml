@@ -5,12 +5,12 @@
     name={{ item }}
     state=present
   with_items:
-    - gearman-server
+    - gearman-job-server
   sudo: yes
 
 - name: service
   service: >
-    name=gearman-server
+    name=gearman-job-server
     state=started
     enabled=yes
   sudo: yes

@@ -2,6 +2,6 @@
 
 - name: gearman server restart
   service: >
-    name=gearman-server
+    name=gearman-job-server
     state=restarted
   sudo: yes
